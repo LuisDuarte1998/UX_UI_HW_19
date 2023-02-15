@@ -1,0 +1,200 @@
+/* start of my CSS file for my portfolio*/
+html{
+    height: 100%; /* better for mobile*/
+}
+
+body{
+    background-color: #727772;
+    margin: 0;
+
+    min-height: 100%; /* better for mobile*/
+
+    display: flex;
+    flex-direction: column;
+
+}
+.inline-block{
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background: #373738;
+    font-family:serif;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.Logo{
+    float: left;
+    padding: 10px 0;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 50px;
+    position: relative;
+}
+nav ul > li > a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+nav ul > li > a:hover{
+    color: #33D0B3;
+    font-weight: bold;
+}
+nav ul > li > a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #33D0B3;
+    
+    position: relative;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+nav ul > li > a:hover::before{
+    width: 100%;
+}
+.heroImg{
+    height: 450px;
+    padding: 25px;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.me{
+    width: 425px;
+    margin-left: 32px;
+}
+.resumeDownload{
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: #373738;
+
+    min-height: 20vh;
+}
+footer ul{
+    margin: 0;
+    
+    list-style: none;
+    text-align: center;
+    padding-top: 40px;
+    word-spacing: 100px; 
+}
+footer li{
+    display: inline-block;
+    margin: 0;
+}
+footer ul > li > a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+footer ul > li > a:hover{
+    color: #33D0B3;
+    font-weight: bold;
+}
+footer ul > li > a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #33D0B3;
+
+    position: relative;
+    top: 0;
+    width: 0%;
+
+    transition: ease-in-out 250ms;
+}
+footer ul > li > a:hover::before{
+    width: 100%;
+}
+.copyright{
+    text-align: center;
+    padding-top: 15px;
+    
+}
+.copyright p{
+    padding-left: 10px;
+    color: white;
+    font-size: 18px;
+}
+.myTools{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#myTools{
+    font-size: 36px;
+}
+.flexContainter{
+    display: inline-block;
+    flex-direction: row;
+}
+.figma, .trello, .vsCode, .inVision{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.myWork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workGrid{
+    display: flex;
+    flex-direction: column;
+}
+#project1Content{
+    justify-content: center;
+    text-align: center;
+}
+#project2Content{
+    justify-content: center;
+    text-align: center;
+}
+.viewAllProjectsButton{
+    font-weight: 400;
+    font-size: 18px;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
