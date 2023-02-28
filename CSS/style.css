@@ -6,23 +6,22 @@ html{
 body{
     background-color: #727772;
     margin: 0;
+    padding: 0;
 
     min-height: 100%; /* better for mobile*/
 
     display: flex;
     flex-direction: column;
 
+    font-family: 'Libre Franklin';
+
 }
 .inline-block{
     display: flex;
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
 header{
     background: #373738;
-    font-family:serif;
+    font-family: 'Libre Franklin';
 }
 header::after{
     content: '';
@@ -30,52 +29,18 @@ header::after{
     clear: both;
 }
 .Logo{
+    position: absolute;
     float: left;
     padding: 10px 0;
 }
-nav{
-    float: right;
-}
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-nav li{
-    display: inline-block;
-    margin-left: 20px;
-    padding-top: 50px;
-    position: relative;
-}
-nav ul > li > a{
-    color: #FFF;
-    text-decoration: none;
-    font-size: 24px;
-}
-nav ul > li > a:hover{
-    color: #33D0B3;
-    font-weight: bold;
-}
-nav ul > li > a::before{
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: #33D0B3;
-    
-    position: relative;
-    top: 0;
-    width: 0%;
-
-    transition: all ease-in-out 250ms;
-}
-nav ul > li > a:hover::before{
-    width: 100%;
-}
-.heroImg{
-    height: 450px;
-    padding: 25px;
-}
+.hero-image{
+    background-image: url("/UX_UI_HW_19/UX_UI_HW_19/images/Hero Image.png");
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+} 
 .content{
     width: 500px;
     margin: 0 auto;
@@ -90,7 +55,7 @@ nav ul > li > a:hover::before{
     width: 425px;
     margin-left: 32px;
 }
-.resumeDownload{
+#resumeDownload{
     width: fit-content;
     text-align: center;
     align-self: center;
@@ -156,9 +121,13 @@ footer ul > li > a:hover::before{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    font-family: 'Libre Franklin';
+    background: #373738;
+    color: white;
 }
 #myTools{
     font-size: 36px;
+    margin-bottom: 10px;
 }
 .flexContainter{
     display: inline-block;
@@ -184,7 +153,7 @@ footer ul > li > a:hover::before{
     text-align: center;
 }
 #project2Content{
-    justify-content: center;
+    justify-content: center; 
     text-align: center;
 }
 .viewAllProjectsButton{
@@ -197,4 +166,10 @@ footer ul > li > a:hover::before{
 }
 .fade-in.appear{
     opacity: 1;
+    padding: 0;
 }
+#myWork{
+    font-family: 'Libre Franklin';
+    font-size: 36px;
+}
+
