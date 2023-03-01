@@ -34,7 +34,7 @@ header::after{
     padding: 10px 0;
 }
 .hero-image{
-    background-image: url("/UX_UI_HW_19/UX_UI_HW_19/images/Hero Image.png");
+    background-image: url("/images/Hero Image.png");
     background-position: center;
     background-size: cover;
     height: 80%;
